@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akhil Karumanchi — AI/ML Engineer & Data Scientist</title>
+<meta name="description" content="Akhil Karumanchi — AI/ML Engineer & Data Scientist. 5+ years across Airbnb, Kaiser Permanente, and Goldman Sachs. Machine learning, Generative AI, and MLOps.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Spline+Sans+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0e1116; --bg-elev:#161b22; --ink:#e8e3d8; --ink-soft:#a7a195; --ink-faint:#6b6760;
+    --accent:#d8754f; --accent-2:#7fae9b; --line:#262b33; --line-soft:#1c2128;
+    --display:"Fraunces", Georgia, serif; --body:"Newsreader", Georgia, serif; --mono:"Spline Sans Mono", ui-monospace, monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:19px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  body::before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(800px 500px at 78% -5%, rgba(216,117,79,.10), transparent 60%),radial-gradient(700px 600px at 5% 30%, rgba(127,174,155,.07), transparent 55%)}
+  body::after{content:"";position:fixed;inset:0;z-index:-1;opacity:.035;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 32px}
+  a{color:inherit;text-decoration:none}
+  nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(10px);background:rgba(14,17,22,.72);border-bottom:1px solid var(--line-soft)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{font-family:var(--mono);font-size:14px;letter-spacing:.04em;color:var(--ink)}
+  .brand b{color:var(--accent)}
+  .navlinks{display:flex;gap:28px;font-family:var(--mono);font-size:13px;letter-spacing:.03em}
+  .navlinks a{color:var(--ink-soft);transition:color .2s}
+  .navlinks a:hover{color:var(--accent)}
+  @media(max-width:760px){.navlinks{display:none}}
+  header{padding:118px 0 86px;position:relative}
+  .eyebrow{font-family:var(--mono);font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:26px;opacity:0;animation:rise .8s .1s forwards}
+  h1{font-family:var(--display);font-weight:900;font-size:clamp(46px,8.5vw,100px);line-height:.96;letter-spacing:-.02em;margin-bottom:28px;opacity:0;animation:rise .9s .2s forwards}
+  h1 .em{font-style:italic;font-weight:500;color:var(--accent-2)}
+  .lede{max-width:660px;font-size:22px;color:var(--ink-soft);line-height:1.55;opacity:0;animation:rise .9s .35s forwards}
+  .lede b{color:var(--ink);font-weight:500}
+  .cta-row{margin-top:42px;display:flex;gap:16px;flex-wrap:wrap;opacity:0;animation:rise .9s .5s forwards}
+  .btn{font-family:var(--mono);font-size:13px;letter-spacing:.04em;padding:13px 22px;border:1px solid var(--line);border-radius:2px;color:var(--ink);transition:all .22s;display:inline-flex;align-items:center;gap:9px}
+  .btn.primary{background:var(--accent);border-color:var(--accent);color:#1a0f0a;font-weight:600}
+  .btn.primary:hover{background:#e8855e;transform:translateY(-2px);color:#1a0f0a}
+  .btn:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+  @keyframes rise{to{opacity:1;transform:translateY(0)}}
+  .eyebrow,h1,.lede,.cta-row{transform:translateY(18px)}
+  section{padding:74px 0;border-top:1px solid var(--line-soft)}
+  .sec-head{display:flex;align-items:baseline;gap:18px;margin-bottom:46px}
+  .sec-num{font-family:var(--mono);font-size:13px;color:var(--accent);letter-spacing:.1em}
+  .sec-title{font-family:var(--display);font-weight:600;font-size:clamp(28px,4vw,40px);letter-spacing:-.01em}
+  .about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:56px}
+  @media(max-width:780px){.about-grid{grid-template-columns:1fr;gap:36px}}
+  .about p{margin-bottom:18px;color:var(--ink-soft)}
+  .about p b{color:var(--ink);font-weight:500}
+  .facts{font-family:var(--mono);font-size:14px;border-left:1px solid var(--line);padding-left:24px}
+  .facts dt{color:var(--ink-faint);font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:5px}
+  .facts dd{color:var(--ink);margin-bottom:22px;line-height:1.5}
+  .facts a{color:var(--accent-2);border-bottom:1px solid transparent;transition:border .2s}
+  .facts a:hover{border-color:var(--accent-2)}
+  .xp{display:grid;grid-template-columns:200px 1fr;gap:36px;padding:30px 0;border-top:1px solid var(--line)}
+  .xp:first-of-type{border-top:none}
+  @media(max-width:780px){.xp{grid-template-columns:1fr;gap:12px}}
+  .xp-when{font-family:var(--mono);font-size:12px;color:var(--ink-faint);letter-spacing:.04em;padding-top:7px}
+  .xp-co{font-family:var(--display);font-weight:600;font-size:25px;color:var(--ink)}
+  .xp-role{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--accent-2);margin:5px 0 14px}
+  .xp ul{list-style:none}
+  .xp li{color:var(--ink-soft);padding-left:20px;position:relative;margin-bottom:9px;font-size:17px}
+  .xp li::before{content:"\203A";position:absolute;left:0;color:var(--accent);font-family:var(--mono)}
+  .proj{display:grid;grid-template-columns:auto 1fr;gap:38px;padding:36px 0;border-top:1px solid var(--line);position:relative}
+  .proj:first-of-type{border-top:none}
+  @media(max-width:780px){.proj{grid-template-columns:1fr;gap:16px}}
+  .proj-idx{font-family:var(--mono);font-size:13px;color:var(--ink-faint);padding-top:6px}
+  .proj h3{font-family:var(--display);font-weight:600;font-size:27px;letter-spacing:-.01em;margin-bottom:6px;transition:color .2s}
+  .proj:hover h3{color:var(--accent)}
+  .proj .role{font-family:var(--mono);font-size:12px;letter-spacing:.05em;color:var(--accent-2);margin-bottom:16px}
+  .proj p{color:var(--ink-soft);margin-bottom:16px;max-width:700px}
+  .metrics{display:flex;gap:34px;flex-wrap:wrap;margin-bottom:20px}
+  .metric .big{font-family:var(--display);font-weight:600;font-size:28px;color:var(--ink);line-height:1}
+  .metric .lbl{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);margin-top:6px}
+  .tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+  .tag{font-family:var(--mono);font-size:11px;letter-spacing:.03em;color:var(--ink-soft);border:1px solid var(--line);border-radius:2px;padding:5px 10px}
+  .proj-links{display:flex;gap:20px;font-family:var(--mono);font-size:13px}
+  .proj-links a{color:var(--accent);border-bottom:1px solid transparent;transition:border .2s;display:inline-flex;gap:6px;align-items:center}
+  .proj-links a:hover{border-color:var(--accent)}
+  .skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:38px}
+  @media(max-width:780px){.skill-grid{grid-template-columns:1fr;gap:28px}}
+  .skill-grid h4{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+  .skill-grid ul{list-style:none;font-family:var(--mono);font-size:14px;line-height:1.95;color:var(--ink-soft)}
+  .contact{text-align:center;padding:92px 0}
+  .contact .big{font-family:var(--display);font-weight:900;font-size:clamp(34px,7vw,70px);letter-spacing:-.02em;line-height:1.02;margin-bottom:26px}
+  .contact .big .em{font-style:italic;font-weight:500;color:var(--accent-2)}
+  .contact .mail{font-family:var(--mono);font-size:17px;color:var(--accent);border-bottom:1px solid var(--accent);padding-bottom:3px;transition:opacity .2s}
+  .contact .mail:hover{opacity:.7}
+  .contact-links{margin-top:34px;display:flex;gap:24px;justify-content:center;font-family:var(--mono);font-size:13px;flex-wrap:wrap}
+  .contact-links a{color:var(--ink-soft);transition:color .2s}
+  .contact-links a:hover{color:var(--accent)}
+  footer{border-top:1px solid var(--line-soft);padding:30px 0;text-align:center;font-family:var(--mono);font-size:12px;color:var(--ink-faint)}
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">AK<b>.</b></a>
+    <div class="navlinks">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#work">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+<header id="top">
+  <div class="wrap">
+    <div class="eyebrow">AI / ML Engineer &middot; Data Scientist</div>
+    <h1>Akhil<br>Karumanchi<span class="em">.</span></h1>
+    <p class="lede">I design and ship <b>production-grade machine learning</b> &mdash; recommendation systems, fraud detection, clinical risk models, and <b>Generative AI</b> &mdash; across finance, healthcare, and digital platforms. 5+ years turning data into decisions at scale.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="#work">View my work &rarr;</a>
+      <a class="btn" href="https://github.com/Akhilkarumanchi05" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/akhil-karumanchi-56440922a/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="resume.pdf" target="_blank" rel="noopener">R&eacute;sum&eacute;</a>
+    </div>
+  </div>
+</header>
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">01</span><h2 class="sec-title">About</h2></div>
+    <div class="about-grid reveal">
+      <div class="about">
+        <p>I'm an AI/ML engineer and data scientist who works across the <b>full machine learning lifecycle</b> &mdash; data engineering, feature design, model training and evaluation, deployment, and monitoring in production cloud environments.</p>
+        <p>My work has shipped in high-stakes domains: <b>personalization and search ranking</b> at Airbnb, <b>clinical risk prediction</b> at Kaiser Permanente, and <b>financial fraud and risk models</b> at Goldman Sachs. More recently I've built with <b>LLMs, RAG pipelines, and vector search</b> to bring Generative AI into enterprise applications.</p>
+        <p>I care about models that are <b>explainable, reliable, and cost-efficient</b> &mdash; using tools like SHAP and LIME, drift detection, and reproducible MLOps practices. I'm always interested in hard problems where data intelligence moves a real metric.</p>
+      </div>
+      <dl class="facts">
+        <dt>Education</dt>
+        <dd>M.S., Saint Peter's University<br>Jersey City, USA &middot; 2025</dd>
+        <dt>Certification</dt>
+        <dd>IBM AI Practitioner &middot; 2025</dd>
+        <dt>Focus</dt>
+        <dd>ML engineering, Generative AI, MLOps, applied data science</dd>
+        <dt>Find me</dt>
+        <dd><a href="https://github.com/Akhilkarumanchi05" target="_blank" rel="noopener">GitHub</a> &middot; <a href="https://www.linkedin.com/in/akhil-karumanchi-56440922a/" target="_blank" rel="noopener">LinkedIn</a></dd>
+      </dl>
+    </div>
+  </div>
+</section>
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">02</span><h2 class="sec-title">Experience</h2></div>
+    <div class="xp reveal">
+      <div class="xp-when">Aug 2024 &mdash; Present</div>
+      <div>
+        <div class="xp-co">Airbnb</div>
+        <div class="xp-role">AI/ML Engineer &mdash; Generative AI, Recommendation &amp; Intelligent Systems</div>
+        <ul>
+          <li>Designed and deployed personalization, recommendation, and search-ranking models (PyTorch, LightGBM) on AWS, improving engagement and booking conversion.</li>
+          <li>Built scalable training and inference pipelines with Apache Spark and Airflow over global-scale user behavior data.</li>
+          <li>Ran A/B experiments with product and marketing to validate personalization gains against conversion and revenue metrics.</li>
+          <li>Implemented SHAP-based explainability and MLflow-tracked workflows; mentored junior engineers on reproducible ML.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="xp reveal">
+      <div class="xp-when">Apr 2022 &mdash; Aug 2023</div>
+      <div>
+        <div class="xp-co">Kaiser Permanente</div>
+        <div class="xp-role">Data Scientist &mdash; Healthcare Analytics &amp; Predictive Modeling</div>
+        <ul>
+          <li>Developed clinical risk-stratification models (XGBoost, PyTorch) supporting treatment prioritization and operational forecasting.</li>
+          <li>Processed large-scale EHR and claims data on Azure Data Lake and Synapse; deployed models via Azure ML with Docker.</li>
+          <li>Built drift detection and automated retraining to sustain prediction accuracy; shipped Power BI dashboards for hospital performance.</li>
+          <li>Ensured HIPAA compliance and partnered with clinicians to embed AI insights into real-world workflows.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="xp reveal">
+      <div class="xp-when">Jan 2020 &mdash; Apr 2022</div>
+      <div>
+        <div class="xp-co">Goldman Sachs</div>
+        <div class="xp-role">Data Scientist &mdash; Financial Analytics &amp; Risk Insights</div>
+        <ul>
+          <li>Built fraud detection and financial risk models (XGBoost, LightGBM, anomaly detection) on high-volume transaction data.</li>
+          <li>Engineered SQL/Spark preprocessing and ETL pipelines feeding model training and risk reporting.</li>
+          <li>Ran backtesting and stress-testing simulations to validate model stability across market conditions.</li>
+          <li>Maintained documentation, experiment tracking, and version control for audit-traceable, reproducible workflows.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">03</span><h2 class="sec-title">Selected Projects</h2></div>
+    <article class="proj reveal">
+      <div class="proj-idx">01</div>
+      <div>
+        <h3>Auto Insurance Fraud Detection</h3>
+        <div class="role">Capstone &middot; Supervised Classification</div>
+        <p>An end-to-end pipeline classifying insurance claims as fraudulent or legitimate. Detailed EDA surfaced fraud patterns, features were engineered from mixed categorical/numerical data, class imbalance was handled with SMOTE, and four models were benchmarked. XGBoost and SVM delivered the strongest, most balanced results &mdash; with high-risk indicators and financial hardship as top predictors.</p>
+        <div class="metrics">
+          <div class="metric"><div class="big">98%</div><div class="lbl">Best Accuracy</div></div>
+          <div class="metric"><div class="big">0.98</div><div class="lbl">F1 (XGBoost)</div></div>
+          <div class="metric"><div class="big">4</div><div class="lbl">Models Compared</div></div>
+        </div>
+        <div class="tags"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">XGBoost</span><span class="tag">SMOTE</span><span class="tag">pandas</span><span class="tag">seaborn</span></div>
+        <div class="proj-links"><a href="https://github.com/Akhilkarumanchi05/Capstone-Insurance-Fraud-Detection" target="_blank" rel="noopener">&#8599; Code</a></div>
+      </div>
+    </article>
+    <article class="proj reveal">
+      <div class="proj-idx">02</div>
+      <div>
+        <h3>Investment Portfolio Optimization</h3>
+        <div class="role">Research Project &middot; Quantitative ML</div>
+        <p>A machine-learning approach to maximizing returns at acceptable risk across 55 assets &mdash; stocks, bonds, gold, real estate, and currencies over two decades. Decision trees and random forests drive asset selection, SVMs fine-tune allocation, and regression predicts returns and risk. Assets are auto-categorized by risk level, and a Monte Carlo simulation maps the efficient frontier.</p>
+        <div class="metrics">
+          <div class="metric"><div class="big">55</div><div class="lbl">Assets Modeled</div></div>
+          <div class="metric"><div class="big">20yr</div><div class="lbl">Historical Data</div></div>
+          <div class="metric"><div class="big">1000</div><div class="lbl">MC Simulations</div></div>
+        </div>
+        <div class="tags"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">Random Forest</span><span class="tag">SVM</span><span class="tag">Monte Carlo</span><span class="tag">matplotlib</span></div>
+        <div class="proj-links"><a href="https://github.com/Akhilkarumanchi05/Investment-Portfolio-Optimization" target="_blank" rel="noopener">&#8599; Code</a></div>
+      </div>
+    </article>
+    <article class="proj reveal">
+      <div class="proj-idx">03</div>
+      <div>
+        <h3>Customer Churn Prediction for E-Commerce</h3>
+        <div class="role">Predictive Modeling &middot; Deployment</div>
+        <p>Built churn models (XGBoost, Random Forest) and engineered RFM features to lift accuracy. EDA pinpointed the main churn drivers &mdash; inactivity periods and low engagement &mdash; and the model was deployed as a Flask API for real-time risk scoring, paired with a Power BI dashboard tracking churn probability and CLTV impact. Insights drove targeted retention campaigns.</p>
+        <div class="metrics">
+          <div class="metric"><div class="big">92%</div><div class="lbl">Precision</div></div>
+          <div class="metric"><div class="big">+15%</div><div class="lbl">Accuracy via RFM</div></div>
+          <div class="metric"><div class="big">+12%</div><div class="lbl">Retention Lift</div></div>
+        </div>
+        <div class="tags"><span class="tag">XGBoost</span><span class="tag">Random Forest</span><span class="tag">Flask API</span><span class="tag">RFM Features</span><span class="tag">Power BI</span></div>
+      </div>
+    </article>
+    <article class="proj reveal">
+      <div class="proj-idx">04</div>
+      <div>
+        <h3>Geospatial Threat Analysis Dashboard</h3>
+        <div class="role">Data Visualization &middot; Spatial Analytics</div>
+        <p>Processed over 10M global incident records using GeoPandas and H3 spatial indexing, integrating real-time feeds (GDELT, OpenStreetMap) through API pipelines. DBSCAN clustering identified crime and protest hotspots, surfaced through interactive Plotly maps adopted by security teams. Optimized PostGIS spatial queries delivered a 5&times; speedup in analytics.</p>
+        <div class="metrics">
+          <div class="metric"><div class="big">10M+</div><div class="lbl">Records Processed</div></div>
+          <div class="metric"><div class="big">90%</div><div class="lbl">Hotspot Precision</div></div>
+          <div class="metric"><div class="big">5&times;</div><div class="lbl">Faster Queries</div></div>
+        </div>
+        <div class="tags"><span class="tag">GeoPandas</span><span class="tag">H3</span><span class="tag">DBSCAN</span><span class="tag">Plotly</span><span class="tag">PostGIS</span><span class="tag">APIs</span></div>
+      </div>
+    </article>
+    <article class="proj reveal">
+      <div class="proj-idx">05</div>
+      <div>
+        <h3>Employee Satisfaction &amp; Attrition Prediction</h3>
+        <div class="role">HR Analytics &middot; EDA &amp; Modeling</div>
+        <p>A dual modeling pipeline on HR data &mdash; classifying which employees are likely to leave and predicting their satisfaction level. Built a scikit-learn ColumnTransformer (StandardScaler + OneHotEncoder) for clean preprocessing, used an Isolation Forest to detect and remove anomalies before training, then applied Logistic Regression for attrition classification and Linear Regression for satisfaction scoring. Surfaced the key retention drivers and laid groundwork for temporal analysis.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">Logistic Regression</span><span class="tag">Linear Regression</span><span class="tag">Isolation Forest</span><span class="tag">EDA</span></div>
+      </div>
+    </article>
+  </div>
+</section>
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">04</span><h2 class="sec-title">Toolkit</h2></div>
+    <div class="skill-grid reveal">
+      <div><h4>Languages &amp; Data</h4><ul><li>Python &middot; SQL &middot; PySpark</li><li>pandas / NumPy / SciPy</li><li>Spark &middot; Hadoop &middot; Kafka</li><li>Airflow</li></ul></div>
+      <div><h4>ML &amp; Deep Learning</h4><ul><li>scikit-learn &middot; XGBoost &middot; LightGBM</li><li>PyTorch &middot; TensorFlow &middot; Keras</li><li>Time series &middot; A/B testing</li><li>SHAP &middot; LIME (Explainable AI)</li></ul></div>
+      <div><h4>Generative AI</h4><ul><li>LLM applications</li><li>RAG pipelines</li><li>Embeddings &middot; Vector DBs</li><li>Prompt engineering</li></ul></div>
+      <div><h4>Cloud &amp; MLOps</h4><ul><li>AWS (SageMaker, S3, Lambda)</li><li>Azure (ML, Synapse, Databricks)</li><li>Docker &middot; Kubernetes</li><li>MLflow &middot; CI/CD pipelines</li></ul></div>
+      <div><h4>Visualization &amp; BI</h4><ul><li>Tableau &middot; Power BI &middot; Looker</li><li>matplotlib &middot; seaborn &middot; Plotly</li><li>Executive dashboards</li><li>KPI monitoring</li></ul></div>
+      <div><h4>Practices</h4><ul><li>Feature engineering</li><li>Model evaluation &amp; drift</li><li>AI governance &amp; fairness</li><li>Reproducible workflows</li></ul></div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="big">Let's build something<br><span class="em">with data.</span></div>
+    <a class="mail" href="mailto:akhilkarumanchi22@gmail.com">akhilkarumanchi22@gmail.com</a>
+    <div class="contact-links">
+      <a href="https://github.com/Akhilkarumanchi05" target="_blank" rel="noopener">GitHub &#8599;</a>
+      <a href="https://www.linkedin.com/in/akhil-karumanchi-56440922a/" target="_blank" rel="noopener">LinkedIn &#8599;</a>
+      <a href="resume.pdf" target="_blank" rel="noopener">R&eacute;sum&eacute; &#8599;</a>
+    </div>
+  </div>
+</section>
+<footer><div class="wrap">&copy; 2026 Akhil Karumanchi &middot; Built with care</div></footer>
+<script>
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
